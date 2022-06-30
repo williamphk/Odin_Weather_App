@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="weather-overview-container">
+        <div class="weather-overview__description"></div>
+        <div class="weather-overview__city"></div>
+        <div class="weather-overview__date"></div>
+        <div class="weather-overview__time"></div>
+        <div class="weather-overview__temperature-unit-c"></div>
+        <div class="weather-overview__temperature-unit-f hide"></div>
+        <div class="change-unit">
+          <div class="weather-overview__unit-f">Display °F</div>
+          <div class="weather-overview__unit-c hide">Display °C</div>
+        </div>
+        <div class="weather-overview__icon"><img src="" alt="" /></div>
+        <div class="search-box">
+          <input type="text" name="city" id="city" placeholder="Search City" />
+          <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="error-msg"></div>
+      </div>
+
+      <div class="weather-details-container">
+        <div class="weather-details__feelsLike">
+          <div class="weather-details__icon"></div>
+          <div class="weather-details__label">Feels Like</div>
+          <div class="weather-details__data" id="feels-like-unit-c"></div>
+          <div class="weather-details__data hide" id="feels-like-unit-f"></div>
+        </div>
+        <div class="weather-details__humidity">
+          <div class="weather-details__icon"></div>
+          <div class="weather-details__label">Humidity</div>
+          <div class="weather-details__data" id="humidity"></div>
+        </div>
+        <div class="weather-details__chanceOfRain">
+          <div class="weather-details__icon"></div>
+          <div class="weather-details__label">Chance of Rain</div>
+          <div class="weather-details__data" id="chance-of-rain">N/A</div>
+        </div>
+        <div class="weather-details__windSpeed">
+          <div class="weather-details__icon"></div>
+          <div class="weather-details__label">Wind Speed</div>
+          <div class="weather-details__data" id="wind-speed-kmph"></div>
+          <div class="weather-details__data hide" id="wind-speed-mph"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="weather-forecast-container">
+      <div class="weather-forecast-daily-container">
+        <div class="weather-forecast-daily" id="current-day-plus-one">
+          <div class="current-day-plus-one__day"></div>
+          <div class="current-day-plus-one__temperature"></div>
+          <div class="current-day-plus-one__icon"></div>
+        </div>
+        <div class="weather-forecast-daily" id="current-day-plus-two">
+          <div class="current-day-plus-two__day"></div>
+          <div class="current-day-plus-two__temperature"></div>
+          <div class="current-day-plus-two__icon"></div>
+        </div>
+        <div class="weather-forecast-daily" id="current-day-plus-three">
+          <div class="current-day-plus-three__day"></div>
+          <div class="current-day-plus-three__temperature"></div>
+          <div class="current-day-plus-three__icon"></div>
+        </div>
+        <div class="weather-forecast-daily" id="current-day-plus-four">
+          <div class="current-day-plus-four__day"></div>
+          <div class="current-day-plus-four__temperature"></div>
+          <div class="current-day-plus-four__icon"></div>
+        </div>
+        <div class="weather-forecast-daily" id="current-day-plus-five">
+          <div class="current-day-plus-five__day"></div>
+          <div class="current-day-plus-five__temperature"></div>
+          <div class="current-day-plus-five__icon"></div>
+        </div>
+        <div class="weather-forecast-daily" id="current-day-plus-six">
+          <div class="current-day-plus-six__day"></div>
+          <div class="current-day-plus-six__temperature"></div>
+          <div class="current-day-plus-six__icon"></div>
+        </div>
+        <div class="weather-forecast-daily" id="current-day-plus-seven">
+          <div class="current-day-plus-seven__day"></div>
+          <div class="current-day-plus-seven__temperature"></div>
+          <div class="current-day-plus-seven__icon"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/ec724df7ce.js" crossorigin="anonymous"></script>
+  </body>
+</html>

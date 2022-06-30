@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+}
+
+html {
+  height: calc(100vh - 120px);
+}
+
+body {
+  background-image: url("rain.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  color: aliceblue;
+  font-family: "Roboto", sans-serif;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.weather-overview__description {
+  font-size: 35px;
+}
+
+.weather-overview__temperature-unit-c,
+.weather-overview__temperature-unit-f {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.change-unit {
+  width: 72px;
+}
+
+.weather-overview__unit-c,
+.weather-overview__unit-f {
+  cursor: pointer;
+  border: #fff 1px solid;
+  border-radius: 5px;
+  width: 72px;
+  padding: 5px;
+}
+
+img {
+  height: 120px;
+  width: 120px;
+}
+
+input {
+  height: 30px;
+  width: 50%;
+  border-style: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.685);
+  font-size: 15px;
+  outline: none;
+  border-radius: 0px;
+  background-color: transparent;
+  padding-right: 40px;
+  padding-left: 5px;
+  color: #fff;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.478);
+}
+
+button {
+  border-style: none;
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: transparent;
+  position: relative;
+  right: 50px;
+}
+
+.weather-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.weather-details__data {
+  font-size: 30px;
+}
+
+.weather-forecast-daily-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.current-day-plus-one__temperature,
+.current-day-plus-two__temperature,
+.current-day-plus-three__temperature,
+.current-day-plus-four__temperature,
+.current-day-plus-five__temperature,
+.current-day-plus-six__temperature,
+.current-day-plus-seven__temperature {
+  margin-top: 5px;
+  font-size: 30px;
+}
+
+.hide {
+  display: none;
+}
